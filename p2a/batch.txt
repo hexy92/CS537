@@ -1,6 +1,0 @@
-ls
-ls
-cd
-path
-ls
-cd

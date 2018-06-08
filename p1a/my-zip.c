@@ -24,18 +24,18 @@
           }
           total++;
           if(thischar != lastchar){
-            //fwrite(&count, 4,1,stdout);
-            printf("%d%c", count,lastchar);
+            fwrite(&count, 4,1,stdout);
+            printf("%c", lastchar);
             lastchar = thischar;
             count = 1;
           }
           else{
             count++;
           }
-      }
+          }
       if(i == argc -1 && thischar == EOF){
-        //fwrite(&count, 4,1,stdout);
-        printf("%d%c", count, lastchar);
+        fwrite(&count, 4,1,stdout);
+        printf("%c", lastchar);
       }
       fclose(fp);
       }
